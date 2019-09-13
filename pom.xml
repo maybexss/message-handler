@@ -2,6 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.8.RELEASE</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.sweeky.common</groupId>
@@ -13,7 +18,39 @@
         <module>message-handler-datasource</module>
         <module>message-handler-common</module>
         <module>message-handler-impl</module>
+        <module>message-handler-logger</module>
     </modules>
 
+    <properties>
+        <slf4j-api.version>1.7.28</slf4j-api.version>
+        <fastjson.version>1.2.60</fastjson.version>
+        <spring-boot-configuration-processor.version>2.1.8.RELEASE</spring-boot-configuration-processor.version>
+        <spring-boot-starter.version>2.1.8.RELEASE</spring-boot-starter.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-configuration-processor</artifactId>
+                <version>${spring-boot-configuration-processor.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter</artifactId>
+                <version>${spring-boot-starter.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
