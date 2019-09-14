@@ -1,5 +1,6 @@
 package com.sweeky.message.handler.framework.handler;
 
+import com.sweeky.common.LogUtil;
 import com.sweeky.message.handler.common.constants.Constant;
 import com.sweeky.message.handler.framework.conf.MessageConfig;
 import com.sweeky.message.handler.framework.entity.message.ReceivedMessage;
@@ -7,7 +8,6 @@ import com.sweeky.message.handler.framework.proxy.MessageProxy;
 import com.sweeky.message.handler.framework.topic.Topic;
 import com.sweeky.message.handler.framework.util.ExecutorServiceUtil;
 import com.sweeky.message.handler.framework.util.SpringContextUtil;
-import com.sweeky.message.handler.logger.LogUtil;
 import org.springframework.util.StringUtils;
 
 import java.util.Arrays;

@@ -1,8 +1,8 @@
 package com.sweeky.message.handler.framework.entity.file;
 
+import com.sweeky.common.LogUtil;
 import com.sweeky.message.handler.framework.generator.MessageIdGenerator;
 import com.sweeky.message.handler.framework.util.SpringContextUtil;
-import com.sweeky.message.handler.logger.LogUtil;
 
 import java.io.File;
 import java.io.IOException;

@@ -18,23 +18,17 @@
         <module>message-handler-datasource</module>
         <module>message-handler-common</module>
         <module>message-handler-impl</module>
-        <module>message-handler-logger</module>
     </modules>
 
     <properties>
-        <slf4j-api.version>1.7.28</slf4j-api.version>
         <fastjson.version>1.2.60</fastjson.version>
         <spring-boot-configuration-processor.version>2.1.8.RELEASE</spring-boot-configuration-processor.version>
         <spring-boot-starter.version>2.1.8.RELEASE</spring-boot-starter.version>
+        <logger-util.version>1.0-SNAPSHOT</logger-util.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-api</artifactId>
-                <version>${slf4j-api.version}</version>
-            </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
@@ -49,6 +43,11 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter</artifactId>
                 <version>${spring-boot-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sweeky.common</groupId>
+                <artifactId>logger-util</artifactId>
+                <version>${logger-util.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

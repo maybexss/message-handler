@@ -1,6 +1,7 @@
 package com.sweeky.message.handler.framework.entity.file;
 
-import com.sweeky.message.handler.logger.LogUtil;
+
+import com.sweeky.common.LogUtil;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,6 +1,6 @@
 package com.sweeky.message.handler.framework.log;
 
-import com.sweeky.message.handler.logger.LogUtil;
+import com.sweeky.common.LogUtil;
 
 public class LogTest {
     public static void main(String[] args) {
