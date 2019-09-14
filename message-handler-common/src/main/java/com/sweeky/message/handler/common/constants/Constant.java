@@ -25,4 +25,8 @@ public class Constant {
      * messageType: 4
      */
     public static final int INDEX_MESSAGE_SIZE = 32;
+
+    public static final String CONVERTER = "Converter";
+
+    public static final String PROCESSOR = "Processor";
 }

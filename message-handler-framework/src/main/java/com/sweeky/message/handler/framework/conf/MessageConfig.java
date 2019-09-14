@@ -22,6 +22,13 @@ public class MessageConfig {
      */
     private long fileIncrementSize = 128 * 1024 * 1024L;
 
+    /**
+     * message queue capacity
+     */
+    private int messageQueueCapacity = 50_000;
+
+    private String batchPersistentSize = "{\"TEST\":100000}";
+
     public long getLogMessageReceivedScheduleTime() {
         return logMessageReceivedScheduleTime;
     }
@@ -47,5 +54,22 @@ public class MessageConfig {
 
     public void setFilePrefixPath(String filePrefixPath) {
         this.filePrefixPath = filePrefixPath;
+    }
+
+    public int getMessageQueueCapacity() {
+        return messageQueueCapacity;
+    }
+
+    public void setMessageQueueCapacity(int messageQueueCapacity) {
+        this.messageQueueCapacity = messageQueueCapacity;
+    }
+
+
+    public String getBatchPersistentSize() {
+        return batchPersistentSize;
+    }
+
+    public void setBatchPersistentSize(String batchPersistentSize) {
+        this.batchPersistentSize = batchPersistentSize;
     }
 }
