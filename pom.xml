@@ -21,7 +21,7 @@
     </modules>
 
     <properties>
-        <fastjson.version>1.2.60</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <spring-boot-configuration-processor.version>2.1.8.RELEASE</spring-boot-configuration-processor.version>
         <spring-boot-starter.version>2.1.8.RELEASE</spring-boot-starter.version>
         <logger-util.version>1.0-SNAPSHOT</logger-util.version>
